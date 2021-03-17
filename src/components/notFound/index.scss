@@ -1,0 +1,25 @@
+@import url('./desktop.scss') (min-width: 768px);
+@import url('./mobile.scss') (max-width: 768px);
+@import "../../theme";
+
+.notFound {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #fff;
+	min-width: 300px;
+	img {
+		margin-top: -10%;
+		width: 100%;
+		max-width: 500px;
+	}
+	button {
+		.fa {
+			color: #fff;
+		}
+	}
+}

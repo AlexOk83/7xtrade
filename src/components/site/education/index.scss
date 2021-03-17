@@ -1,0 +1,57 @@
+@import url('desktop.scss') (min-width: 768px);
+@import url('mobile.scss') (max-width: 768px);
+@import "../../../theme";
+
+.education {
+  .container {
+    .education__wrapper {
+      .education__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        a.education__item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 217px;
+          min-height: 130px;
+          background-color: #E7EDF3;
+          border-radius: 5px;
+          color: $black51;
+          padding: 15px;
+
+          &:hover {
+            background-color: $blueFF;
+            color: $white;
+          }
+
+          .education__item-icon {
+            font-size: 26px;
+          }
+
+          .education__item-title {
+            font-size: 15px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+
+  .education {
+    .container {
+
+      .education__wrapper {
+
+        .education__items {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

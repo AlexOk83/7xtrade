@@ -1,0 +1,261 @@
+@import url('desktop.scss') (min-width: 768px);
+@import url('mobile.scss') (max-width: 768px);
+@import "../../theme";
+
+.cabinet {
+	$cabinet-color-text: #a5a7ac;
+
+	.content {
+		.react-tabs__tab-panel--selected > div > .row {
+			display: flex;
+			//justify-content: space-around;
+			margin-bottom: 20px;
+		}
+		.column, .panel {
+			width: 40%;
+			&.panel {
+				width: unset;
+			}
+			&.big {
+				width: 60%;
+			}
+			&.small {
+				width: 30%;
+			}
+			.head {
+				font-size: 16px;
+				font-weight: 700;
+				margin: 10px 0 30px 0;
+			}
+			&.two {
+				margin: 0 0 0 40px;
+			}
+			&.info-blocks {
+					margin: 30px 0 0 40px;
+					.info-block {
+						padding: 22px 20px;
+						margin-bottom: 20px;
+						border-radius: 4px;
+						background-color: #f2f8fd;
+						display: flex;
+						.title {
+							color: #797a7d;
+							font-size: 14px;
+							margin: auto 0;
+						}
+						.value {
+							//text-align: center;
+							margin-left: auto;
+							font-size: 20px;
+							font-weight: 700;
+							color: #656565;
+						}
+					}
+					.btn {
+						width: 100%;
+						margin: auto;
+					}
+				}
+			.body {
+				.row {
+					margin: 15px 0;
+				}
+				.desc {
+					margin: 15px 0;
+				}
+				.InputFromTo {
+					display: flex;
+					.dash {
+						color: $cabinet-color-text;
+						margin: auto 7px;
+						font-size: 14px;
+					}
+					input {
+						width: 115px !important;
+					}
+					.apply-filter {
+						color: #fff;
+						background: $color-dark;
+						border-radius: 4px;
+						margin-left: 14px;
+						padding: 10px 12px;
+					}
+				}
+				.pages {
+					display: flex;
+					.count {
+						font-weight: 700;
+						margin: auto 20px auto 40px;
+					}
+				}
+				.pagination {
+					display: flex;
+					padding: 0;
+					margin: 0;
+					li {
+						position: relative;
+						color: #353a4d;
+						background: #34394b1a;
+						list-style-type: none;
+						padding: 12px 14px;
+						border-radius: 4px;
+						font-size: 14px;
+						line-height: 18px;
+						font-weight: 400;
+						cursor: pointer;
+						&:hover {
+							background: #353a4d33;
+						}
+						&.disabled {
+							opacity: 0.7;
+						}
+						&.link-next {
+							margin-left: 14px;
+						}
+					}
+				}
+				.field, .DayPickerInput {
+					&.DayPickerInput {
+						margin: 0 !important;
+					}
+					position: relative;
+					display: flex;
+					margin-top: 20px;
+					padding: 5px 11px;
+					border-radius: 4px;
+					border: 1px solid $cabinet-color-text;
+					.title {
+						color: $cabinet-color-text;
+						position: absolute;
+						top: -13px;
+						left: 7px;
+						padding: 3px;
+						text-align: center;
+						background: #fff;
+					}
+					input, select, .input {
+						padding: 5px 0;
+						width: 100%;
+						border: 0;
+						background: #0000;
+						box-sizing: border-box;
+						border-radius: 4px;
+						line-height: 19px;
+						text-align: left;
+						color: $color-text;
+						outline: none;
+						.icon {
+							position: absolute;
+							right: 16px;
+							top: 10px;
+							font-size: 18px;
+							color: #8e8e8e;
+							cursor: pointer;
+						}
+					}
+					.addon {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						color: $cabinet-color-text;
+						&.icon {
+							margin: auto 0 auto 10px;
+							font-size: 18px;
+						}
+						&.link {
+							color: $color-blue;
+							cursor: pointer;
+						}
+					}
+				}
+				.field-buttons {
+					display: flex;
+					margin: 10px 0 30px 0;
+					button {
+						padding: 6px 12px;
+						font-size: 14px;
+						line-height: 18px;
+						color: $color-text;
+						background: #353a4d1a;
+						margin-right: 9px;
+						border-radius: 4px;
+						font-weight: 700;
+						&:hover {
+							background: rgba(53,58,77,0.2);
+						}
+					}
+				}
+				table {
+					width: 100%;
+					thead {
+						th {
+							color: $cabinet-color-text;
+							font-weight: 700;
+							font-size: 13px;
+							border-bottom: 1px solid #ddd;
+							padding: 12px;
+							&.order {
+								width: 150px;
+							}
+						}
+					}
+					tbody {
+						td {
+							&.row {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								.arrow {
+									margin-right: 7px;
+								}
+							}
+							.current-chart-info {
+								justify-content: center;
+								.title {
+									color: $color-text;
+								}
+							}
+							.desc {
+								color: $cabinet-color-text;
+								font-size: 12px;
+								margin-top: 3px;
+							}
+							padding: 12px;
+							text-align: center;
+							.arrow {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								font-size: 21px;
+							}
+							.arrow.fa-arrow-up {
+								color: #74b02e;
+								transform: rotate(45deg);
+							}
+							.arrow.fa-arrow-down {
+								color: #ff3131;
+								transform: rotate(-45deg);
+							}
+							.in_proccess {
+								color: #c4c6f2;
+							}
+							.win {
+								color: #74b02e;
+							}
+							.loss {
+								color: #ff3131;
+							}
+							.draw {
+								color: #f4c318;
+							}
+						}
+					}
+				}
+			}
+			.apply {
+				width: 100%;
+				margin-top: 20px;
+			}
+		}
+	}
+}

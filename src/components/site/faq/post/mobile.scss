@@ -1,0 +1,17 @@
+@import "../../../../theme";
+
+.topic {
+	.first {
+		padding: 20px 5% 0 5% !important;
+		margin: 80px auto 30px auto !important;
+		.box {
+			margin-bottom: 0 !important;
+			.menu {
+				width: 100% !important;
+			}
+			.content {
+				width: 100% !important;
+			}
+		}
+	}
+}

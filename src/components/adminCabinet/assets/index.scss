@@ -1,0 +1,24 @@
+@import url('desktop.scss') (min-width: 768px);
+@import url('mobile.scss') (max-width: 768px);
+@import "../../../theme";
+
+.admin-settings {
+	.panel {
+		min-width: 320px;
+		.body {
+			.field {
+				display: flex;
+				align-items: center;
+				margin-top: 15px;
+				flex-direction: column;
+				.name {
+					text-align: center;
+				}
+				input {
+					min-width: 300px;
+					max-width: 300px;
+				}
+			}
+		}
+	}
+}

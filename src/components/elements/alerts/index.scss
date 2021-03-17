@@ -1,0 +1,80 @@
+@import "../../../theme";
+
+.alerts {
+	position: fixed;
+	right: 7px;
+	bottom: 7px;
+	display: flex;
+	flex-direction: column;
+	z-index: 3;
+
+	.fade-in {
+		opacity: 1;
+		animation-name: fadeInOpacity;
+		animation-iteration-count: 1;
+		animation-timing-function: ease-in;
+		animation-duration: 0.2s;
+	}
+
+	@keyframes fadeInOpacity {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	.alert {
+		position: relative;
+		//background: #f5f5f5;
+		background: $terminal-color-background;
+		//border: 1px solid $color-blue;
+		border-radius: 4px;
+		padding: 10px;
+		min-width: 250px;
+		//margin: 0 7px 7px 0;
+		display: flex;
+		margin-top: 15px;
+
+		.icon {
+			height: 100%;
+			margin: auto 15px auto 0;
+			font-size: 24px;
+		}
+
+		img.icon {
+			width: 25px;
+			height: 25px;
+			border-radius: 18px;
+			margin-right: 10px;
+		}
+
+		.column {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+
+			.title {
+				color: #fff;
+				font-weight: 600;
+				margin-top: -2px;
+				line-height: 25px;
+			}
+
+			.desc {
+				font-size: 13px;
+				color: #75a9ff;
+			}
+		}
+
+		.close {
+			position: absolute;
+			top: 8px;
+			right: 12px;
+			font-size: 16px;
+			color: #fff; //$color-blue;
+			cursor: pointer;
+		}
+	}
+}

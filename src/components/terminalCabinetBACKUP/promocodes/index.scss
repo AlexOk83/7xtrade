@@ -1,0 +1,59 @@
+@import url('desktop.scss') (min-width: 768px);
+@import url('mobile.scss') (max-width: 768px);
+@import "../../../theme";
+
+.promocodes {
+	.panel {
+		min-height: 200px;
+		table {
+			width: 100%;
+			border-spacing: 0;
+			thead {
+				tr {
+					th {
+						font-size: 13px;
+						color: #8fa5bf;
+						font-weight: normal;
+						border-bottom: 1px solid #ddd;
+						padding: 12px;
+					}
+				}
+			}
+			tbody {
+				tr {
+					td {
+						padding: 12px;
+						text-align: center;
+						.arrow {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 21px;
+						}
+						.arrow.fa-arrow-up {
+							color: #74b02e;
+							transform: rotate(45deg);
+						}
+						.arrow.fa-arrow-down {
+							color: #ff3131;
+							transform: rotate(-45deg);
+						}
+						.in_proccess {
+							color: #c4c6f2;
+						}
+						.win {
+							color: #74b02e;
+						}
+						.loss {
+							color: #ff3131;
+						}
+						.draw {
+							color: #f4c318;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+

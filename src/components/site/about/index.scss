@@ -1,0 +1,150 @@
+//@import url('desktop.scss') (min-width: 768px);
+//@import url('mobile.scss') (max-width: 768px);
+@import "../../../theme";
+
+.about {
+	.container {
+		.about__wrapper {
+			h1.about__title {
+
+			}
+
+			p {
+				color: $black51;
+				font-size: 16px;
+				margin-bottom: 15px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				span {
+					font-weight: 700;
+					color: $blueFF;
+				}
+			}
+
+			.about__map {
+				margin-bottom: 40px;
+
+				.about__map-title {
+					font-size: 18px;
+					color: $black4F;
+					margin-bottom: 57px;
+				}
+
+				.about__map-img {
+					display: flex;
+					justify-content: center;
+
+					img {
+						width: 100%;
+						max-width: 720px;
+					}
+				}
+			}
+
+			.about__content {
+				h2, h3 {
+					font-size: 24px;
+					color: $black4F;
+					font-weight: 700;
+					margin-bottom: 33px;
+				}
+
+				.text_box {
+					margin-bottom: 33px;
+				}
+
+				.payments {
+					display: flex;
+					justify-content: space-between;
+					margin-bottom: 50px;
+
+					.payments__left {
+						width: 100%;
+						max-width: 500px;
+						padding-right: 30px;
+					}
+					.payments__right {
+						width: 100%;
+						max-width: 550px;
+
+						img {
+							max-width: 100%;
+						}
+
+					}
+
+					h3.payments__title {
+						font-weight: 400;
+						margin-bottom: 20px;
+					}
+
+					h3.payments__title-right {
+						margin-bottom: 0;
+						font-size: 32px;
+					}
+
+					.payments__content {
+
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.about {
+		.container {
+			.about__wrapper {
+
+				p {
+					color: $black51;
+					font-size: 16px;
+					margin-bottom: 15px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					span {
+						font-weight: 700;
+						color: $blueFF;
+					}
+				}
+
+				.about__content {
+					h2, h3 {
+					}
+
+					.payments {
+						display: flex;
+						flex-direction: column;
+
+						.payments__left {
+							padding-right: 0;
+							max-width: 100%;
+							margin-bottom: 30px;
+						}
+						.payments__right {
+							max-width: 100%;
+
+						}
+
+						h3.payments__title {
+						}
+
+						h3.payments__title-right {
+						}
+
+						.payments__content {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

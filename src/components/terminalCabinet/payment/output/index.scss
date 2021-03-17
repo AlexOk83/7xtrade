@@ -1,0 +1,303 @@
+@import url('desktop.scss') (min-width: 768px);
+@import url('mobile.scss') (max-width: 768px);
+@import "../../../../theme";
+
+
+.payment_output {
+  .withdraw__row {
+    display: flex;
+    width: 100%;
+
+    .content__mid-left {
+      column-gap: 30px;
+
+      .content__mid-col {
+        .data_block-cards,
+        .data_block-accInfo {
+          display: flex;
+          gap: 15px;
+          flex-wrap: wrap;
+
+          a.card_item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 200px;
+            min-height: 70px;
+            background-color: #F2F0F0;
+            border-radius: 4px;
+            padding: 5px 20px;
+
+            .card_item__icon {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 20px;
+
+              img {
+                width: 32px;
+              }
+            }
+
+            .card_item__text {
+              padding-top: 2px;
+              font-size: 16px;
+              color: $black51;
+            }
+
+            &:hover {
+              background-color: $white;
+            }
+          }
+
+          a.selected {
+            background-color: $white;
+          }
+
+          .accInfo__item {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            min-height: 70px;
+            background-color: #EAF2F6;
+            border-radius: 4px;
+            padding: 15px 20px;
+
+            .accInfo__item__title {
+              font-size: 14px;
+              color: #878787;
+              margin-bottom: 3px;
+            }
+
+            .accInfo__item__value {
+              font-size: 16px;
+              color: $black51;
+              text-align: center;
+              font-weight: 700;
+            }
+          }
+
+        }
+
+        .withdraw__label {
+          text-align: center;
+          color: #878787;
+          margin-top: 10px;
+        }
+      }
+
+      .withdraw__col-left {
+        width: 100%;
+        max-width: 415px;
+      }
+
+      .withdraw__col-right {
+        width: 100%;
+        max-width: 200px;
+      }
+    }
+
+    .content__mid-right {
+      .data_block {
+        .data_block-payment_type {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          max-width: 270px;
+          height: 148px;
+          border-radius: 10px;
+          background-color: #F2F0F0;
+          padding: 30px 20px;
+
+          .payment_type__header {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+
+            .row {
+              display: flex;
+              align-items: center;
+            }
+
+            .header_row {
+              .header__title {
+                font-size: 16px;
+                margin-left: 20px;
+              }
+            }
+          }
+
+          .payment_type__body {
+            .row {
+              display: flex;
+            }
+
+            .amount_row {
+              font-size: 12px;
+              color: $grey9A;
+
+              .amount_row__prop {
+                margin-right: 4px;
+              }
+            }
+          }
+        }
+
+        .data_block-inputs {
+          width: 100%;
+          max-width: 270px;
+
+          /*.input_cover {
+            margin-bottom: 9px;
+            position: relative;
+
+            .input_label {
+              font-size: 12px;
+              color: $greyC4;
+              margin-bottom: 3px;
+            }
+
+            input {
+              width: 100%;
+              height: 36px;
+              border: 1px solid $greyC4;
+              border-radius: 4px;
+              background-color: #FFFDFD;
+              padding: 3px 15px;
+              cursor: text;
+              font-size: 14px;
+              font-weight: 700;
+              margin-bottom: 3px;
+
+
+              &::placeholder {
+                font-size: 14px;
+                color: $greyC4;
+                opacity: 1;
+                text-align: right;
+              }
+
+              &:hover {
+                border: 1px solid $grey77;
+
+                &::placeholder {
+                  color: $grey77;
+                  opacity: 1;
+                }
+              }
+
+              &:valid {
+                &::placeholder {
+                  color: $grey77;
+                  opacity: 1;
+                }
+              }
+            }
+
+            .input_placeholder {
+              position: absolute;
+              top: 28px;
+              right: 15px;
+              font-size: 12px;
+              color: $greyC4;
+            }
+          }*/
+        }
+      }
+
+      button.withdraw_btn {
+        width: 100%;
+        max-width: 270px;
+        display: block;
+      }
+    }
+  }
+
+  .content__mid-bottom {
+    width: 100%;
+    display: flex;
+
+    .withdraw__questions {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 340px;
+      min-height: 222px;
+      margin-right: 30px;
+
+      ul.withdraw__questions-tabs {
+        li {
+          margin-bottom: 15px;
+
+          a {
+            font-weight: 700;
+            color: $black51;
+          }
+        }
+
+        li.active {
+          a {
+            color: $grey9A;
+          }
+        }
+      }
+    }
+
+    .withdraw__answers {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 720px;
+      min-height: 222px;
+
+      .tab_container {
+        .withdraw__tab_content {
+          .withdraw__answers-item {
+            padding: 15px 15px 15px 25px;
+            background-color: #F2F0F0;
+            border-radius: 10px;
+
+            .item__header {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 20px;
+
+              .header__left {
+                display: flex;
+                .item__header-icon {
+                  margin-right: 20px;
+                  padding-top: 2px;
+                }
+
+                .item__header-title {
+                  font-weight: 700;
+                }
+              }
+
+              .header__right {
+                font-weight: 700;
+                font-size: 16px;
+                cursor: pointer;
+              }
+            }
+
+            .item__body {
+              p {
+                color: $grey9A;
+                margin-bottom: 15px;
+
+                &:last-child {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

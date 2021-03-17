@@ -1,0 +1,51 @@
+@import "../../theme";
+
+.cabinet {
+	display: flex;
+	.content {
+	    margin: 58px 15px 15px 85px;
+	    width: 100%;
+	    padding: 20px 25px 20px;
+	    background: #fff;
+	    border-radius: 4px;
+	    .menu {
+	    	display: flex;
+	    	align-items: center;
+			overflow-x: auto;
+			overflow-y: hidden;
+			scroll-snap-type: x mandatory;
+			list-style-type: none;
+			border-radius: 4px;
+			height: 40px;
+			margin-top: 0;
+			background: #ebebed;
+			padding: 5px;
+			width: fit-content;
+			li {
+				display: flex;
+				align-items: center;
+				height: 100%;
+				border-radius: 4px;
+				margin: 0 3px;
+				font-weight: 700;
+				&:hover {
+					background: #d9dade;
+				}
+				&.react-tabs__tab--selected {
+					background: #353a4d;
+					box-shadow: 2px 2px 6px rgba(28,32,46,0.2);
+					a {
+						color: #fff;
+					}
+				}
+				a {
+					border-radius: 4px;
+					padding: 10px 12px;
+					.fa {
+						display: none;
+					}
+				}
+			}
+	    }
+	}
+}

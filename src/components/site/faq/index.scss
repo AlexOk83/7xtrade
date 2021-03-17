@@ -1,0 +1,56 @@
+//@import url('desktop.scss') (min-width: 768px);
+//@import url('mobile.scss') (max-width: 768px);
+@import "../../../theme";
+
+
+.faq {
+  .container {
+    .faq__wrapper {
+      .faq__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+
+        a.faq__item {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 217px;
+          min-height: 130px;
+          background-color: #E7EDF3;
+          border-radius: 5px;
+          color: $black51;
+          padding: 15px;
+
+          &:hover {
+            background-color: $blueFF;
+            color: $white;
+          }
+
+          .faq__item-icon {
+            font-size: 26px;
+          }
+
+          .faq__item-title {
+            font-size: 15px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 490px) {
+  .faq {
+    .container {
+      .faq__wrapper{
+        .faq__items{
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

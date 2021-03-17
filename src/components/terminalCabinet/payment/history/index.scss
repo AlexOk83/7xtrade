@@ -1,0 +1,103 @@
+@import url('desktop.scss') (min-width: 768px);
+@import url('mobile.scss') (max-width: 768px);
+@import "../../../../theme";
+
+.payment-history {
+
+  .history__content {
+
+    .history__table {
+      padding: 7px 20px;
+      border-left: 1px solid #F5F5F6;
+      border-right: 1px solid #F5F5F6;
+
+
+      .history__table-header {
+        display: flex;
+        max-width: 100%;
+        min-height: 36px;
+        border-bottom: 1px solid #F5F5F6;
+
+        .header__item {
+          width: 25%;
+          height: 100%;
+          margin-top: 5px;
+          padding-right: 5px;
+          color: #9A9CA6;
+          text-align: center;
+        }
+      }
+
+      // section table-body
+      .history__table-body {
+        width: 100%;
+
+        .history__table-item {
+          display: flex;
+          width: 100%;
+          min-height: 70px;
+          border-top: 1px solid #e8e8e8;
+          border-bottom: 1px solid #e8e8e8;
+          margin-top: -1px;
+
+          .item-col {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 5px;
+            color: $black4D;
+            font-size: 13px;
+            width: 25%;
+          }
+
+          .order {
+            .order__value {
+            }
+          }
+
+          .dateTime {
+            .dateTime__value {
+
+            }
+          }
+
+          .amount {
+            .amount__value {
+            }
+          }
+
+          .status {
+            .status__value {
+            }
+
+            .status__label {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 94px;
+              height: 19px;
+              border-radius: 50px;
+              color: $white;
+              font-size: 13px;
+            }
+
+            .label__done {
+              background-color: $green97;
+            }
+
+            .label__progress {
+              background-color: $blueFF;
+            }
+
+            .label__refused {
+              background-color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+

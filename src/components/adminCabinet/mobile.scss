@@ -1,0 +1,469 @@
+@import "../../theme";
+
+.admin-cabinet {
+	position: relative;
+	background: #aaaaaa;
+
+    .open-menu-on-mobile {
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100vw;
+    	height: 45px;
+    	background: #1c1f32;
+		color: #fff;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		.fa {
+			font-size: 25px;
+			margin: 0 0 0 14px;
+		}
+    }
+
+    .close-menu-on-mobile {
+    	position: fixed;
+    	top: 0;
+    	right: 0;
+    	font-size: 25px;
+    	color: #fff;
+    	width: 50px;
+    	height: 50px;
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+
+	.InputFromTo {
+		display: flex;
+		align-items: center;
+		input {
+			line-height: 1.5;
+			padding: 7px 15px;
+			color: #fff;
+		}
+		margin-bottom: 12px;
+		.dash {
+			margin: 0 15px;
+		}
+		.apply-filter {
+			color: #333;
+			display: block;
+			text-decoration: none;
+			padding: 7px 15px;
+			margin-left: 15px;
+			//background: #162032;
+			border-radius: 4px;
+			border: 1px solid #162032;
+			transition: background-color .2s,color .2s;
+			&:hover {
+				color: #fff;
+				background: #464a58;
+			}
+		}
+
+		.DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+		    background: #4a90e2 !important;
+		    color: #fff;
+		}
+		.DayPicker-Day {
+			border-radius: 0px !important;
+			&:hover {
+				background: #4a90e2 !important;
+			}
+		}
+		.DayPicker-Day--selected {
+			background: #4a90e2 !important;
+		}
+
+		.DayPicker-Day--start {
+			border-top-left-radius: 50% !important;
+			border-bottom-left-radius: 50% !important;
+			background: #4a90e2 !important;
+		}
+		.DayPicker-Day--end {
+			border-top-right-radius: 50% !important;
+			border-bottom-right-radius: 50% !important;
+			background: #4a90e2 !important;
+		}
+		.DayPickerInput-Overlay {
+			color: #fff;
+			//width: 480px;
+			background: #1c2132 !important;
+		}
+		.InputFromTo-to .DayPickerInput-Overlay {
+			color: #fff;
+			margin-left: -198px;
+			background: #1c2132 !important;
+		}
+	}
+    .react-tabs {
+    	display: flex;
+    	padding: 50px 0 0 0;
+    	overflow-x: scroll;
+		.menu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: none;
+			margin: 0;
+			padding: 0;
+			min-width: 100vw;
+			min-height: 100vh;
+			background: -webkit-gradient(linear,left bottom,left top,from(#272d43),to(#161b28));
+			background: linear-gradient(0deg,#272d43,#161b28);
+			text-align: center;
+			z-index: 3;
+			padding-top: 70px;
+			.logo {
+				position: relative;
+				display: none;
+				img {
+					margin: 30px 20px 50px 20px;
+				}
+				.cabinet-name {
+					position: absolute;
+					bottom: -30px;
+					right: -5px;
+					color: #fff;
+					font-weight: 600;
+					letter-spacing: 3px;
+    				text-transform: uppercase;
+				}
+			}
+			li {
+				list-style-type: none;
+				text-align: center;
+				a {
+					display: flex;
+					align-items: center;
+					color: #8fa5bf;
+					text-decoration: none;
+					padding: 15px 5px 15px 15px;
+					transition: background-color .2s,color .2s;
+					.icon {
+						font-size: 19px;
+						margin-right: 7px;
+						width: 37px;
+					}
+					.title {
+						font-size: 12px;
+						text-align: left;
+					}
+				}
+				&.react-tabs__tab--selected, &:hover {
+					a {
+						color: #fff !important;
+						background: #464a58 !important;
+					}
+				}
+			}
+		}
+		.react-tabs__tab-panel--selected {
+			width: calc(100vw - 20px);
+			//margin: 25px 0 0 5px !important;
+			font-size: 14px;
+			margin: auto;
+			div {
+				.react-tabs {
+					display: flex;
+					flex-direction: column;
+					ul {
+						color: #fff;
+						margin: 0;
+						padding: 0;
+						height: 40px;
+						min-height: 40px;
+						width: 100%;
+						background: none;
+						display: flex;
+						li {
+							a {
+								border: 1px solid #464a58;
+								color: #333;
+								padding: 10px 15px;
+								cursor: pointer;
+								margin-right: 15px;
+								height: 20px;
+								border-radius: 4px;
+							}
+							&.react-tabs__tab--selected {
+								a {
+									color: #fff !important;
+									background: #464a58 !important;
+								}
+							}
+						}
+					}
+					.react-tabs__tab-panel--selected {
+						//margin: 25px 0 0 0;
+					}
+				}
+				.row {
+					display: flex;
+				    justify-content: space-around;
+				    width: 100%;
+				}
+				.cabinet-table {
+					width: 100%
+				}
+				.panel {
+					display: inline-table;
+					border-radius: 4px;
+					margin-bottom: 24px;
+					color: $color-text;
+					//width: 33.3333%;
+					//border: 1px solid #323232;
+					&.full {
+						width: 100%;
+						//width: calc(100% - 80px);
+						.body {
+							padding: 20px 10px;
+						}
+					}
+					.head {
+						color: #eff2f7;
+						font-size: 14px;
+						padding: 10px;
+						width: calc(100% - 20px);
+						background: #303748;
+						border-radius: 3px 3px 0 0;
+					}
+					.body {
+						border-radius: 4px;
+						padding: 10px;
+						color: #333;
+						display: flex;
+   						flex-direction: column;
+   						align-items: center;
+   						background: #fff;
+   						&.row {
+   							flex-direction: row;
+   						}
+   						.media {
+   							display: flex;
+   							flex-direction: column;
+   							width: 100%;
+   						}
+						.row {
+							display: flex;
+							align-items: center;
+							border-bottom: 1px solid #4e5272;
+							padding: 15px 0;
+							&:last-child {
+								border: 0;
+							}
+						}
+						.name {
+							width: 100%;
+							color: #333;
+							margin-right: 7px;
+							padding: 5px;
+						}
+						.value {
+							width: 100%;
+							color: #333;
+							height: 32px;
+							padding: 5px 10px;
+							outline: 0;
+							font-size: 14px;
+							text-decoration: none;
+							display: flex;
+							align-items: center;
+							max-height: 25px;
+						}
+						select {
+							height: 37px;
+							padding: 5px 22px;
+						}
+						.icon {
+							font-size: 28px;
+							color: $color-gold;
+							&.fa-arrow-up {
+								transform: rotate(45deg);
+							}
+							&.fa-arrow-down {
+								transform: rotate(-45deg);
+							}
+						}
+						input, select {
+							border: 1px solid #162032;
+							//background: #162032;
+							border-radius: 4px;
+							&[readonly] {
+								border-radius: 4px;
+								background-color: transparent;
+							}
+						}
+						.btn-action {
+							color: #333;
+							text-decoration: none;
+							padding: 15px;
+							margin: auto;
+							display: flex;
+							padding: 7px 15px;
+							border: 1px solid #162032;
+							border-radius: 4px;
+							margin-top: 15px;
+							&:hover {
+								color: #fff;
+								background: #464a58;
+							}
+						}
+						.row-action {
+							display: flex;
+							justify-content: space-evenly;
+							width: 100%;
+							margin-top: 15px;
+							.btn-action {
+								margin: 0;
+								display: flex;
+								.fa {
+									font-size: 19px;
+								}
+								&.cancel {
+									color: $color-red;
+								}
+								&.ok {
+									color: $color-green;
+								}
+							}
+						}
+						ul.pagination {
+							display: flex;
+							justify-content: space-evenly;
+							width: 100%;
+							max-width: 300px;
+							min-height: 100%;
+							background: none;
+							margin-top: 15px;
+							li {
+								&.disabled {
+									display: none;
+								}
+								a {
+									color: #333;
+									font-size: 15px;
+									padding: 4px 8px;
+									border-radius: 4px;
+									border: 1px solid #162032;
+									&[aria-label="Go to next page"],
+									&[aria-label="Go to previous page"] {
+										//display: none;
+									}
+									&[aria-label="Go to first page"],
+									&[aria-label="Go to last page"] {
+										
+									}
+								}
+								&.active {
+									a {
+										color: #fff !important;
+										background: #464a58 !important;
+									}
+								}
+							}
+						}
+						table {
+							width: 100%;
+							border-spacing: 0;
+							thead {
+								tr {
+									th {
+										font-size: 13px;
+										font-weight: normal;
+										border-bottom: 1px solid #333;
+										padding: 12px;
+									}
+								}
+							}
+							tbody {
+								tr {
+									td {
+										position: relative;
+										padding: 12px;
+										text-align: center;
+										&.edit {
+											white-space: nowrap;
+										}
+										&.icons {
+											.fa {
+												font-size: 18px;
+												cursor: pointer;
+											}
+											.cancel {
+												color: $color-red;
+												margin-right: 20px;
+											}
+											.ok {
+												color: $color-green;
+												margin-right: 20px;
+											}
+										}
+
+										select.input {
+											height: unset !important;
+										}
+
+										input, select {
+											width: 100%;
+											//min-width: 140px;
+											padding: 3px 5px;
+											&[type="checkbox"] {
+												position: relative;
+												min-width: unset;
+												width: 18px;
+												height: 18px;
+												color: #fff;
+												border-radius: 4px;
+												border: 1px solid #777c89;
+												cursor: pointer;
+												&:checked:before {
+													top: 3px;
+													left: 6px;
+													width: 3px;
+													height: 7px;
+													content: "";
+													position: absolute;
+													border-right: 2px solid $color-text;
+													border-bottom: 2px solid $color-text;
+													transform: rotate(45deg);
+												}
+											}
+										}
+										.arrow {
+											display: flex;
+											justify-content: center;
+											align-items: center;
+											font-size: 21px;
+										}
+										.arrow.fa-arrow-up {
+											color: #74b02e;
+											transform: rotate(45deg);
+										}
+										.arrow.fa-arrow-down {
+											color: #ff3131;
+											transform: rotate(-45deg);
+										}
+										.in_proccess {
+											color: #c4c6f2;
+										}
+										.win {
+											color: #74b02e;
+										}
+										.loss {
+											color: #ff3131;
+										}
+										.draw {
+											color: #f4c318;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+@import url('desktop.scss') (min-width: 768px);
+@import url('mobile.scss') (max-width: 768px);
+@import "../../../theme";
+
+.terminal-chart {
+	.TVChartContainer {
+		display: flex;
+   		justify-content: center;
+    	align-items: center;
+		img {
+			width: 120px;
+		}
+	}
+}

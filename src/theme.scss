@@ -1,0 +1,96 @@
+@mixin themeText() {
+/*	color: hsla(0, 0%, 100%, 0);
+	-webkit-background-clip: text;
+	background-clip: text;*/
+	color: #6032f1;
+}
+
+@mixin iPhoneXStyle() {
+	padding-top: constant(safe-area-inset-top);
+	padding-top: env(safe-area-inset-top);
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
+}
+
+@mixin btn-style() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	//min-width: 150px;
+	//font-weight: 600;
+	padding: 13px 23px;
+	line-height: 22px;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	.fa {
+		font-weight: normal;
+	}
+}
+
+$app-max-width: 4096px;
+$app-min-width: 320px;
+$app-background: #f5f5f5;
+
+
+$color-white: #fff;
+$color-black: #000;
+$color-gray: #a2a2a2;
+$color-light: #fafafa;
+$color-dark: #353a4d;
+$color-blue: #4a8eff;
+$color-yellow: #f1df00;
+$color-green: #74b02e;
+$color-red: #ff3131;
+$color-gold: #f2dc64;
+
+$color-text: #333;
+$hover-background: #464a58;
+
+$terminal-color-text: #6e6e6e;
+$terminal-color-background: #353a4d;
+$terminal-color-box-shadow: 0 2px 4px 0 $color-text;
+
+
+//<MIXINS>==========================================
+@mixin animation_0_25 {
+	transition: all .25s ease-out;
+	-webkit-transition: all .25s ease-out;
+	-moz-transition: all .25s ease-out;
+	-o-transition: all .25s ease-out;
+	-ms-transition: all .25s ease-out;
+}
+
+//<VARIABLES>==========================================
+$fontfamily: "";
+$mxw: 1244;
+$mxw_full: 1920;
+//<Colors>
+$white: #ffffff;
+
+$black: #000;
+$black4D: #353A4D;
+$black36: #353636;
+$black4F: #504F4F;
+$black51: #525151;
+
+$grey65: #494F65;
+$grey77: #777777;
+$grey9A: #9A9A9A;
+$greyC4: #C4C4C4;
+
+$blueFF: #30ACFF;
+$blueF5: #34A8F5;
+$blue65: #0D4165;
+$blue50: #043150;
+
+
+$green59: #0FAF59;
+$green97: #29CC97;
+
+$red: #FF3636;
+
+$bgF8: #F8F8F8;
+$bgFA: #FAFAFA;
+

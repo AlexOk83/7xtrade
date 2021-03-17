@@ -1,0 +1,21 @@
+@import "../../../theme";
+
+.auth {
+	.form {
+		margin-top: 80px !important;
+		padding: 15px 5% !important;
+		box-shadow: none !important;
+		border-radius: 0 !important;
+		.inputs {
+			input {
+				width: calc(100% - 60px) !important;
+			}
+		}
+		.buttons {
+			width: calc(100% - 40px) !important;
+		}
+		.select-wrapper {
+			width: calc(100% - 40px) !important;
+		}
+	}
+}

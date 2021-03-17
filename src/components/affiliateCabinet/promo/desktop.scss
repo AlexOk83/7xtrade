@@ -1,0 +1,55 @@
+@import "../../../theme";
+
+.promo {
+	.panel {
+		.table-url {
+			display: flex;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			input {
+				min-width: 100px;
+				background: #eee !important;
+				border: 0 !important;
+				height: 32px;
+	    		padding: 6px 12px;
+	    	}
+	    	button {
+	    		padding: 10px 12px;
+	    		border-radius: 0 3px 3px 0;
+	    		&:hover, &:active {
+	    			background: #e6e6e6;
+    				border-color: #adadad;
+    				box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+	    		}
+	    	}
+		}
+		&.createLink {
+			margin-right: 25px;
+			min-width: 350px;
+			.body {
+				display: flex;
+				justify-content: center;
+				.name {
+					text-align: center;
+				}
+				select {
+					border-radius: 4px;
+				}
+				.alert-info {
+					border-color: #9cb4c5;
+					color: #305d8c;
+					background-color: #d6dde7;
+					margin-top: 15px;
+					padding: 10px;
+					border-radius: 4px;
+					max-width: 300px;
+				}
+				.ok {
+					display: flex;
+					justify-content: center;
+					min-width: 120px;
+				}
+			}
+		}
+	}
+}

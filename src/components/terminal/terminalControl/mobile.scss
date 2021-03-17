@@ -1,0 +1,203 @@
+@import "../../../theme";
+
+/*
+.terminal-control {
+	min-width: 220px;
+    border-radius: 6px;
+    padding: 0 10px;
+    font-size: 13px;
+    height: 100%;
+    //background: #090c1b;
+    //border: 1px solid #363C4E;
+
+	.form-box {
+		display: flex;
+		justify-content: space-between;
+		.form-group {
+			position: relative;
+			width: 45%;
+			background: #1c2a3b;
+			border: 1px solid #2a405b;
+			border-radius: 4px;
+			margin: 3px 0;
+			height: 40px;
+			.title {
+				color: #787b86;
+				text-align: center;
+				display: none;
+			}
+			.input {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				width: 50%;
+				margin: auto;
+				height: 100%;
+				//font-weight: 700;
+				//font-size: 16px;
+				line-height: 19px;
+				padding-top: 1px;
+				input {
+					padding: 5px 25px 5px 0;
+					//font-size: 15px;
+					margin: 0;
+					width: 100%;
+					background: #12131e00;
+					border: 0px solid #12131e;
+					box-sizing: border-box;
+					//box-shadow: 0 15px 35px rgba(15,16,24,.35);
+					//font-weight: 700;
+					//font-size: 16px;
+					line-height: 20px;
+					text-align: center;
+					color: #fff;
+					outline: none;
+					z-index: 1;
+				}
+				&.tradeTime {
+					&:before {
+						font-size: 12px;
+						content: 'мин.';
+						position: absolute;
+						right: 5px;
+					}
+				}
+				&.tradePrice {
+					&:before {
+						font-size: 14px;
+						content: '$';
+						position: absolute;
+						right: 17px;
+					}
+				}
+			}
+			.buttons {
+				position: absolute;
+				top: 0px;
+				display: flex;
+				width: 100%;
+				justify-content: space-between;
+				//border-top: 1px solid #fff;
+				button {
+					width: 30%;
+					//background: #232436;
+					//border-radius: 6px;
+					height: 40px;
+					text-align: center;
+					font-size: 24px;
+					color: #fff;
+					line-height: 20px;
+					transition: .22s;
+					//font-weight: 700;
+					cursor: pointer;
+					&:hover {
+						//background: #272946;
+					}
+					&.minus {
+						//border-right: 1px solid #fff;
+					}
+				}
+			}
+		}
+	}
+
+	.profit-box {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 15px;
+		b {
+			//font-size: 32px;
+			color: #74b02e;
+			letter-spacing: 1px;
+			margin-top: -5px;
+		}
+		small {
+			color: #6a6c88;
+			//font-size: 15px;
+			margin-top: -5px;
+		}
+	}
+
+	.strike-box {
+		display: flex;
+		justify-content: space-between;
+		.btn {
+			width: 45%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 8px;
+			padding: 15px 15px;
+			//font-size: 48px;
+    		line-height: 18px;
+    		color: #fff;
+    		text-align: center;
+    		box-sizing: border-box;
+			border-radius: 4px;
+			cursor: pointer;
+			font-weight: 600;
+			.fa {
+				font-size: 19px;
+			}
+			&.green {
+				color: #306424;
+				background: -webkit-gradient(linear,left top,left bottom,from(#4fc83d),to(#3da44f)) 0;
+				background: linear-gradient(#4fc83d,#3da44f) 0;
+				.fa {
+					color: #306424;
+					transform: rotate(45deg);
+				}
+				!*&:hover {
+					box-shadow: 0 0 15px 0px #74b02e;
+				}*!
+			}
+			&.red {
+				color: #a00000;
+				background: -webkit-gradient(linear,left top,left bottom,from(#ff3e1f),to(#f1372e)) 0;
+				background: linear-gradient(#ff3e1f,#f1372e) 0;
+				.fa {
+					color: #a00000;
+					transform: rotate(-45deg);
+				}
+				!*&:hover {
+					box-shadow: 0 0 15px 0px #ff3131;
+				}*!
+			}
+			&:disabled {
+				box-shadow: none;
+				cursor: not-allowed;
+				background: #2e3239;
+			}
+			.fa {
+				color: #fff;
+				margin: 0;
+				//font-size: 42px;
+				//font-weight: 600;
+			}
+			&:hover {
+				color: #ffffffd9;
+				.fa {
+					color: #ffffffd9;
+				}
+			}
+		}
+		.strike-price {
+			padding: 7px;
+			margin: 15px 0;
+			background: #12131e;
+			border: 1px solid #12131e;
+			-webkit-box-shadow: 0 15px 35px rgba(15,16,24,.35);
+			box-shadow: 0 15px 35px rgba(15,16,24,.35);
+			border-radius: 6px;
+			text-align: center;
+			.title {
+				color: #6a6c88;
+			}
+			.price {
+				//font-weight: 600;
+			}
+		}
+	}
+}*/

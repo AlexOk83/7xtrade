@@ -1,0 +1,28 @@
+.chart-page, .chart-container-border {
+	background-color: unset !important;
+}
+
+.group-wWM3zP_M, .group-2JyOhh7Z, .inner-1xuW-gY4, .drawingToolbar-U3_QXRof {
+	background-color: unset !important;
+}
+
+.button-2ioYhFEY, .button-13wlLwhJ, .button-263WXsg- {
+	color: #6e6e6e !important;
+}
+
+.price-axis-stub-3MoqVLRB.apply-common-tooltip.common-tooltip-html.fixed-gear-IiZPkpoQ {
+	display: none;
+}
+
+#drawing-toolbar-object-tree, .group-2JyOhh7Z:last-child {
+	display: none;
+}
+
+.layout__area--top svg, .layout__area--left svg {
+	width: 32px;
+    height: 32px;
+}
+
+.fill-1djIbBXv {
+	background: none;
+}

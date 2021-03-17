@@ -1,0 +1,31 @@
+@import "../../../theme";
+
+.about {
+	.section {
+		padding: 0 5%;
+	}
+
+	.first {
+		h1 {
+			padding: 30px 0 !important;
+		}
+	}
+
+	.payments {
+		flex-direction: column;
+		.block {
+			padding: 0 !important;
+			width: 100% !important;
+			img {
+				display: none;
+			}
+			&.right {
+				margin-top: 15px;
+			}
+		}
+	}
+
+	.closing {
+		height: 20vh !important;
+	}
+}
