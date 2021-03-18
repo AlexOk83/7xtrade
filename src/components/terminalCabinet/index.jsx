@@ -120,6 +120,10 @@ class Cabinet extends React.Component {
 		document.querySelector('.menu').style = 'display: none';
 	}
 
+	moveToPage = (current) => {
+		this.props.history.push(current.value);
+	}
+
 	render() {
 		/*if(this.props.authLogout.success) {
 			delete(this.props.authLogout.success)
@@ -133,9 +137,19 @@ class Cabinet extends React.Component {
 		} = this.state;
 
 		const tablist = [
-			{ value: '/terminal', name: 'Терминал' },
-			{ value: '/cabinet/profile', name: 'Профиль' }
+			{ value: `${url}/profile`, name: 'Профиль' },
+			{ value: `${url}/increase`, name: 'Пополнение' },
+			{ value: `${url}/output`, name: 'Вывод' },
+			{ value: `${url}/history-payments`, name: 'История' },
+			{ value: `${url}/history-deals`, name: 'Сделки' },
+			{ value: `${url}/promo-codes`, name: 'Промокоды' },
 		]
+		if (localStorage.isAdmin) {
+			tablist.push({
+				value: '/admin',
+				name: 'Админ-панель',
+			})
+		}
 
 		return (
 			<div className="cabinet">
@@ -158,10 +172,6 @@ class Cabinet extends React.Component {
 								<div className="content__top">
 									<div className="content__top-left">
 										<TabList className="menu" style={tabName === 'guide' ? {display: 'none'} : {}}>
-											{/*<div
-							className="fa fa-times close-menu-on-mobile"
-							onClick={() => this.closeMenuOnMobile()}
-						/>*/}
 
 											<Tab>
 												<Link to={`${url}/profile`} onClick={() => this.closeMenuOnMobile()}>
@@ -224,7 +234,7 @@ class Cabinet extends React.Component {
 										</TabList>
 									</div>
 									<div className="mobile-tablist" style={{ marginBottom: 20 }}>
-										<Select options={tablist} value='Профиль' />
+										<Select options={tablist} value='Профиль' onChange={this.moveToPage} />
 									</div>
 									<div className="content__top-right">
 										<div className="content__top-info">
